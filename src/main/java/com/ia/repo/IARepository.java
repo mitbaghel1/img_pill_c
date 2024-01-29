@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import com.ia.model.PillsCounterVO;
 
 @Repository
-public interface IARepository extends JpaRepository<PillsCounterVO, Integer>{
+public interface IARepository extends JpaRepository<PillsCounterVO, Long>{
 
 }

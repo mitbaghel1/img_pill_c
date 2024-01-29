@@ -1,2 +1,7 @@
+E:\NewDemoWorkSpace\imageAnalysis\src\main\java\com\ia\service\IAService.java
+E:\NewDemoWorkSpace\imageAnalysis\src\main\java\com\ia\controller\IAController.java
+E:\NewDemoWorkSpace\imageAnalysis\src\main\java\com\ia\repo\IARepository.java
 E:\NewDemoWorkSpace\imageAnalysis\src\main\java\com\ia\Application.java
-E:\NewDemoWorkSpace\imageAnalysis\src\main\java\com\ia\Demo.java
+E:\NewDemoWorkSpace\imageAnalysis\src\main\java\com\ia\config\GlobalExceptionHandler.java
+E:\NewDemoWorkSpace\imageAnalysis\src\main\java\com\ia\model\PillsCounterVO.java
+E:\NewDemoWorkSpace\imageAnalysis\src\main\java\com\ia\model\WebResponseJsonBo.java
