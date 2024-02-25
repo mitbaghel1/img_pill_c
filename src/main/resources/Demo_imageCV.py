@@ -59,3 +59,8 @@ num_images = np.random.randint(15, 21)
 
 # Generate and save images
 generate_images(image_path, output_directory, num_images)
+
+#git diff --stat origin/master..HEAD
+#git diff --name-only origin/master..HEAD
+#git stash list
+#git stash show -p stash@{<number>} > <name>.patch
