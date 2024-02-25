@@ -40,6 +40,13 @@ public class IAController {
 		return ResponseEntity.ok(returnBo);
 	}
 	
+	@GetMapping(value = "/uploadImgAug")
+	public ResponseEntity<WebResponseJsonBo> uploadImgAug(HttpServletRequest req,HttpServletResponse res,@ModelAttribute("imageForm") PillsCounterVO imageForm)
+	{
+		WebResponseJsonBo returnBo=new WebResponseJsonBo();
+		iaService.uploadImgAug();
+		return ResponseEntity.ok(returnBo);
+	}
 	
 	@GetMapping(value = "/getUploadImg")
 	public ResponseEntity<WebResponseJsonBo> yourEndpoint() {

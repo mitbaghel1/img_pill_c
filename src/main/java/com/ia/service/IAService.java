@@ -1,10 +1,12 @@
 package com.ia.service;
 
+import java.io.BufferedReader;
 import java.io.ByteArrayOutputStream;
 import java.io.DataOutputStream;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.nio.file.Files;
@@ -41,6 +43,31 @@ public class IAService {
 	@Autowired
 	IARepository iaRepository;
 	
+	public void uploadImgAug()
+	{
+		try {
+            // Command to execute Python script
+            String command = "C:\\Program Files\\Python311\\python.exe F:\\Demo_imageCV.py";
+            
+            // Start the process
+            ProcessBuilder processBuilder = new ProcessBuilder(command.split(" "));
+            Process process = processBuilder.start();
+            
+            // Read output from Python script
+            BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
+            String line;
+            while ((line = reader.readLine()) != null) {
+                System.out.println(line);
+            }
+            
+            // Wait for the process to finish
+            int exitCode = process.waitFor();
+            System.out.println("Python script execution finished with exit code: " + exitCode);
+            
+        } catch (IOException | InterruptedException e) {
+            e.printStackTrace();
+        }
+	}
 	
 	@Transactional
 	public PillsCounterVO saveUploadImg(PillsCounterVO counterVO)
