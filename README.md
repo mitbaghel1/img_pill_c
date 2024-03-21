@@ -4,3 +4,5 @@ python detect.py --weights runs\train\pill_custom_mode\weights\last.pt --img 640
 
 
 python detect.py --source C:\Users\mitba\Downloads\yolov5-master\Train_data\train\images\tylenol_cold-94-_jpg.rf.3cecf30d1942ce83cc8e2520f6c633db.jpg --weights runs\train\pill_custom_mode\weights\last.pt --save-txt --save-conf --save-crop --project runs\detect\ --name testImg.jpg
+
+python train.py --img 640 --batch 16 --epochs 100 --data data.yaml --cfg models/yolov5s.yaml --weights runs/expXX/weights/last.pt --resume runs/expXX
